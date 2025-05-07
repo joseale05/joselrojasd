@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de formularios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+        <h1>Práctica de formularios</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Buscar en Google</h2>
+            <form autocomplete="off" target="_blank" action="https://google.com/search" method="get">
+                <input name="q" required placeholder="Escribe un texto" type="text" size="100">
+                <button>Buscar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Registro</h2>
+            <form action="https://cadif1.com/registro" method="post">
+                <table id="datos" width="800" align="center" border="0">
+                    <tr>
+                        <td><label for="cedula">Cédula</label></td>
+                        <td><input required id="cedula" name="cedula" type="number" size="10" min="100000" max="999999999"></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input required name="nombre" type="text" size="50" maxlength="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Correo Electrónico</td>
+                        <td><input required name="correo" type="email" size="50" maxlength="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Estado civil</td>
+                        <td>
+                            <input type="radio" value="1" name="estado-civil" id="soltero"><label for="soltero">Soltero</label> 
+                            <input type="radio" value="2" name="estado-civil" id="casado"><label for="casado">Casado</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Género</td>
+                        <td><input type="radio" value="1" name="genero" id="masculino"><label for="masculino">Masculino</label> 
+                            <input type="radio" value="2" name="genero" id="femenino"><label for="femenino">Femenino</label>  
+                            <input type="radio" value="3" name="genero" id="nolose"><label for="nolose">No lo se</label> 
+                            <input type="radio" value="4" name="genero" id="noquierodecir"><label for="noquierodecir">No lo quiero decir</label>  
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de nacimiento</td>
+                        <td><input type="date" name="fecha" required></td>
+                    </tr>
+                    <tr>
+                        <td>Ciudad</td>
+                        <td><select name="pais" id="pais" > 
+                            <option >Afganistán</option>
+                            <option >Albania</option>
+                            <option selected>Alemania</option><option >Andorra</option><option >Angola</option><option >Antigua y Barbuda</option><option >Antillas Holandesas</option><option >Arabia Saudí</option><option >Argelia</option><option >Argentina</option><option >Armenia</option><option >Aruba</option><option >Australia</option><option >Austria</option><option >Azerbaiyán</option><option >Bahamas</option><option >Bangladesh</option><option >Barbados</option><option >Bélgica</option><option >Belice</option><option >Bermudas</option><option >Bielorrusia</option><option >Bolivia</option><option >Bosnia y Herzegovina</option><option >Botsuana</option><option >Brasil</option><option >Brunéi</option><option >Bulgaria</option><option >Cabo Verde</option><option >Camboya</option><option >Camerún</option><option >Canadá</option><option >Chad</option><option >Chile</option><option >China</option><option >Chipre</option><option >Ciudad del Vaticano</option><option >Colombia</option><option >Congo</option><option >Corea del Norte</option><option >Corea del Sur</option><option >Costa de Marfil</option><option >Costa Rica</option><option >Croacia</option><option >Cuba</option><option >Dinamarca</option><option >Dominica</option><option >Ecuador</option><option >Egipto</option><option >El Salvador</option><option >Emiratos Árabes Unidos</option><option >Eslovaquia</option><option >Eslovenia</option><option >España</option><option >Estados Unidos</option><option >Estonia</option><option >Etiopía</option><option >Filipinas</option><option >Finlandia</option><option >Fiyi</option><option >Francia</option><option >Gabón</option><option >Gambia</option><option >Georgia</option><option >Ghana</option><option >Gibraltar</option><option >Granada</option><option >Grecia</option><option >Groenlandia</option><option >Guam</option><option >Guatemala</option><option >Guayana Francesa</option><option >Guinea</option><option >Guinea Ecuatorial</option><option >Guyana</option><option >Haití</option><option >Honduras</option><option >Hong Kong</option><option >Hungría</option><option >India</option><option >Indonesia</option><option >Irán</option><option >Iraq</option><option >Irlanda</option><option >Islandia</option><option >Islas Caimán</option><option >Islas Malvinas</option><option >Islas Vírgenes Británicas</option><option >Islas Vírgenes de los Estados Unidos</option><option >Israel</option><option >Italia</option><option >Jamaica</option><option >Japón</option><option >Jordania</option><option >Kenia</option><option >Kuwait</option><option >Laos</option><option >Letonia</option><option >Líbano</option><option >Liberia</option><option >Libia</option><option >Lituania</option><option >Luxemburgo</option><option >Macao</option><option >Madagascar</option><option >Malasia</option><option >Malawi</option><option >Maldivas</option><option >Malta</option><option >Marruecos</option><option >Martinica</option><option >Mauricio</option><option >Mauritania</option><option >México</option><option >Micronesia</option><option >Moldavia</option><option >Mónaco</option><option >Mongolia</option><option >Montserrat</option><option >Mozambique</option><option >Namibia</option><option >Nepal</option><option >Nicaragua</option><option >Níger</option><option >Nigeria</option><option >Noruega</option><option >Nueva Caledonia</option><option >Nueva Zelanda</option><option >Omán</option><option >Países Bajos</option><option >Pakistán</option><option >Palau</option><option >Palestina</option><option >Panama</option><option >Papúa Nueva Guinea</option><option >Paraguay</option><option >Perú</option><option >Polonia</option><option >Portugal</option><option >Puerto Rico</option><option >Qatar</option><option >Reino Unido</option><option >República Centroafricana</option><option >República Checa</option><option >República Democrática del Congo</option><option >República Dominicana</option><option >Ruanda</option><option >Rumania</option><option >Rusia</option><option >Sahara Occidental</option><option >Samoa</option><option >Samoa Americana</option><option >San Marino</option><option >San Pedro y Miquelón</option><option >San Vicente y las Granadinas</option><option >Santa Lucía</option><option >Senegal</option><option >Serbia y Montenegro</option><option >Sierra Leona</option><option >Singapur</option><option >Siria</option><option >Somalia</option><option >Sri Lanka</option><option >Suazilandia</option><option >Sudáfrica</option><option >Sudán</option><option >Suecia</option><option >Suiza</option><option >Surinam</option><option >Tailandia</option><option >Taiwán</option><option >Tanzania</option><option >Tayikistán</option><option >Togo</option><option >Tonga</option><option >Trinidad y Tobago</option><option >Túnez</option><option >Turkmenistán</option><option >Turquía</option><option >Ucrania</option><option >Uganda</option><option >Uruguay</option><option >Uzbekistán</option><option >Vanuatu</option><option >Venezuela</option><option >Vietnam</option><option >Yemen</option><option >Yibuti</option><option >Zambia</option><option >Zimbabue</option>                                
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Dirección de Habitación </td>
+                        <td><textarea name="direccion" rows="4" cols="50"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" checked id="acepto" name="acepto"> 
+                            <label for="acepto">Acepto las condiciones</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Registrar">
+                            <input type="reset" value="Cancelar">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <section>
+            <h2>Iniciar sesión</h2>
+            <form action="">
+                <input name="correo" type="text" placeholder="Correo Electrónico">
+                <input name="clave" type="password" placeholder="Contraseña">
+                <input id="btnIniciarSesion" type="button" value="Iniciar Sesión">
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

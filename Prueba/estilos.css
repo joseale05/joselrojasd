@@ -1,0 +1,29 @@
+
+
+thead {
+    background-color: gray;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+
+button {
+    background-color: green;
+    color: white;
+}
+
+
+#datos tbody{
+    background-color: white !important;
+}
+
+
+tbody {
+    background-color: azure;
+}
